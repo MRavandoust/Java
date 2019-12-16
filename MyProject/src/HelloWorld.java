@@ -7,6 +7,23 @@ public class HelloWorld {
 		String name = "Masoud";
 		System.out.println("Bonjour " + name +" !"); 
 		
+		int a = 15;
+		
+		a *= 5;
+		
+		int b = 68; 
+		
+		boolean q = (a > b) && (b < 65);
+		
+		System.out.println(q);
+		
+		boolean p = (a > b) || (b < 65);
+		
+		System.out.println(p);
+		
+		
+
+		
 
 	}
 
