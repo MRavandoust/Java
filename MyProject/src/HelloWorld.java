@@ -4,6 +4,7 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		//TODO Auto-generated method stub
 		System.out.println("Hello World");
+		System.out.println("Hello World");
 		String name = "Masoud";
 		System.out.println("Bonjour " + name +" !"); 
 		
@@ -20,6 +21,8 @@ public class HelloWorld {
 		boolean p = (a > b) || (b < 65);
 		
 		System.out.println(p);
+		
+		
 		
 		
 		
