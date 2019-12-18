@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
 * @author Masoud
@@ -29,14 +30,11 @@ public class HelloWorld {
 		boolean p = (a > b) || (b < 65);
 		
 		System.out.println(p);
+		float txTAV = 1.196F; 
 		
 		
-		
-		
-		
-		
-
-		
+	
+			
 
 	}
 
