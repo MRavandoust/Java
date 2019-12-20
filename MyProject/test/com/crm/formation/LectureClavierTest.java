@@ -19,7 +19,7 @@ public class LectureClavierTest {
 		System.out.println("Tapper quelque chose : ");
 
 		String str = reader.nextLine();
-		System.out.println("Vous avez tappé : " + "\"" + str + "\"");
+		System.out.println("Vous avez tappé : " + '\"' + str + '\"');
 		reader.close();
 	}
 
