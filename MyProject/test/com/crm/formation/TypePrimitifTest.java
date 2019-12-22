@@ -52,17 +52,17 @@ public class TypePrimitifTest {
 		System.out.println("Le resultat de modulo est : " + num);
 		
 		
-		char caractère = 'M';
-		String str = " est une caractère";
+		char caractere = 'M';
+		String str = " est une caractere";
 		
-		System.out.println("\"" + caractère + "\"" + str);
+		System.out.println("\"" + caractere + "\"" + str);
 		
-		System.out.println('\"' + caractère + '\"' + "  ?????");
+		System.out.println('\"' + caractere + '\"' + "  ?????");
 		
-		boolean b = ((2 < 4) | (7 < 3));
+		boolean b = ((7 < 4) || (2 < 3));
 		System.out.println(b);
 		
-		boolean b1 = ((2 < 3) & (6 < 3));
+		boolean b1 = ((2 < 3) && (6 < 3));
 		System.out.println(b1);
 		 
 		
