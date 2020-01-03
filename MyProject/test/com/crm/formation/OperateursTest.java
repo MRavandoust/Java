@@ -27,8 +27,6 @@ public class OperateursTest {
 		System.out.println(maVariableInt1);
 		System.out.println(maVariableInt2);
 		System.out.println(maVariableInt3);
-		
-		
 
 	}
 
