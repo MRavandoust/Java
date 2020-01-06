@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class HelloWorld {
 
-	public static void main(String[] args) {
+	public static void main(String[] args ) {
 		//TODO Auto-generated method stub
 //		System.out.println("Hello World");
 //		System.out.println("Bonjour tout le monde");
@@ -33,10 +33,7 @@ public class HelloWorld {
 //		float txTAV = 1.196F; 
 		
 		PerimetreDuRectangle Perimetre = new PerimetreDuRectangle();
-		
-//		double a = 0 ;
-//		double b = 0 ;
-		Perimetre.calculePerimetr(4 , 5);
+		Perimetre.calculePerimetr( 5 , 5 );
 		
 		
 	}
