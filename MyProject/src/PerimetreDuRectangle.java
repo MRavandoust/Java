@@ -23,7 +23,7 @@ public class PerimetreDuRectangle {
 		
 		double p = 2 * (a + b);
 		
-		System.out.println("Le périmère de rectangle est : " + p);
+		System.out.println("Le périmère du rectangle est : " + p);
 		
 		reader.close();
 		
