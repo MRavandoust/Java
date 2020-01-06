@@ -32,11 +32,11 @@ public class HelloWorld {
 //		System.out.println(p);
 //		float txTAV = 1.196F; 
 		
-		PerimetreDuRectangle Perimer = new PerimetreDuRectangle();
+		PerimetreDuRectangle Perimetre = new PerimetreDuRectangle();
 		
 //		double a = 0 ;
 //		double b = 0 ;
-		Perimer.calculePerimetr(4 , 5);
+		Perimetre.calculePerimetr(4 , 5);
 		
 		
 	}
