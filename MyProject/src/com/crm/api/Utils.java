@@ -10,8 +10,8 @@ import java.util.*;
  */
 public class Utils {
 	
-	public static final String COULEUR_BLEU = "Bleu";
-	public static final float PI = 3.14f;     //Declaration d'une constant PI
+	public static final String COULEUR_BLEU = "Bleu";   //Declaration d'une constante COULEUR_BLEU
+	public static final float PI = 3.14f;     //Declaration d'une constante PI
 	
 	
 				// La method CalculePerimetr
@@ -25,6 +25,7 @@ public class Utils {
 	
 	public static void AfficherMessage(String texte) {
 		System.out.println(texte);
+		
 	}
 	
 				//La method MoyenneDe2Nombres
@@ -60,12 +61,27 @@ public class Utils {
 			// La method surfaceCercle
 	
 	public static float surfaceCercle(int rayon) {
-		final float PI = 3.14f;     //Declaration d'une constant PI
+//		final float PI = 3.14f;     //Declaration d'une constant PI
 		float surface = PI * rayon * rayon;
 		return surface;
 		
 	}
 	
 	
+	public static double CalculeSurfaceSphere(double a) {
+		double s = 4*Math.PI*Math.pow(a, 2); 
+		return s;
+	}
+	
+	
+	public static double CalculeVolumeSphere(double a) {
+		double v = (4/3)*Math.PI*Math.pow(a, 3); 
+		return v;
+	}
+	
+	public static double  SurfaceSecteurCirculaire(double a, double b) {
+		double s = (Math.PI*Math.pow(a , 2)*b)/360;
+		return s;
+	}
 	
 }

@@ -16,11 +16,11 @@ public class ApplicationMethod {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 
 		
-		Scanner reader = new Scanner(System.in);
-		
+//		Scanner reader = new Scanner(System.in);
+//		
 //		System.out.println("Entre le langueur du rectangle :");
 //		double nb = reader.nextDouble();
 //		System.out.println("Entre le largeur du rectangle :");
@@ -54,7 +54,11 @@ public class ApplicationMethod {
 //		
 //		System.out.println("Le ciel est " + Utils.COULEUR_BLEU);
 		
-		Math.
+
+					//Calcul de la surface d’un secteur circulaire
+		
+		double s = Utils.SurfaceSecteurCirculaire(14, 60);
+		System.out.println("Surface de la secteur circulaire est : " + s);
 		
 	}
 
