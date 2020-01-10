@@ -28,21 +28,21 @@ public class StringTest {
 		
 		System.out.println(texte.length());  // La langueur d'une chaine 
 		
-		String s = texte.toUpperCase();
+		String s = texte.toUpperCase();		// Converting to Upper case
 		System.out.println(s);
 		
-		String s1 = s.trim();
+		String s1 = s.trim();			// Enlever l'espace vide devant la chaine de caracters
 		System.out.println(s1);
 		
-		String s0 = "Bonjour tout le monde";
+		String s0 = "Bonjour tout le monde";      // Remplacer la totalité d'une chaine de caracter par une autre 
 		String s2 = texte.replaceAll(texte, s0);
 		System.out.println(s2);
 		
 		
-		String s3 = s.replace('A', 'b');
+		String s3 = s.replace('A', 'b');     // Remplacer une caracter par une autre
 		System.out.println(s3);
 		
-		String s4 = s2.substring(5);
+		String s4 = s2.substring(5);      // 
 		System.out.println(s4);
 		
 		
