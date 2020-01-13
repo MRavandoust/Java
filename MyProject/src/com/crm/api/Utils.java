@@ -8,6 +8,7 @@ import java.util.*;
  * @author CRM
  *
  */
+
 public class Utils {
 	
 	public static final String COULEUR_BLEU = "Bleu";   //Declaration d'une constante COULEUR_BLEU
@@ -52,9 +53,10 @@ public class Utils {
 			k = k + j;
 			i++;
 		} 
-			 
+		reader.close();	 
 		double m = k/i;
 		return m;
+		
 	}
 	
 	

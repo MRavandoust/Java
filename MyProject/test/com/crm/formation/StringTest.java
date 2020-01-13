@@ -49,6 +49,11 @@ public class StringTest {
 		String s5 = s2.substring(2 , 5);
 		System.out.println(s5);
 		
+		// Comparaison de chaines
+		String chaine1 = "teste";
+		String chaine2 = "TESTE";
+		System.out.println(chaine1.equals(chaine2));
+		System.out.println(chaine1.equalsIgnoreCase(chaine2));
 		
 
 	}
