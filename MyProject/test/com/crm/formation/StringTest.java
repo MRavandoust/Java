@@ -22,7 +22,7 @@ public class StringTest {
 		System.out.println(texte);
 		
 		// Test de concanétation
-		System.out.println("La dernière fois vous avez dit : " + texte);
+		System.out.println("La derniere fois vous avez dit : " + "\"" + texte + "\"");
 		
 		
 		

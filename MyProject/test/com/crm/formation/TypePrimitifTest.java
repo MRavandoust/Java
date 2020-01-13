@@ -57,7 +57,7 @@ public class TypePrimitifTest {
 		
 		System.out.println("\"" + caractere + "\"" + str);
 		
-		System.out.println('\"' + caractere + '\"' + "  ?????");
+		System.out.println("\'" + caractere + "\'" + str); //???!!!
 		
 		boolean b = ((7 < 4) || (2 < 3));
 		System.out.println(b);
