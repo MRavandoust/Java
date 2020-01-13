@@ -55,7 +55,7 @@ public class Test {
 		String maChaine1 = "Mon texte";
 		String maChaine2 = " est super";
 		
-		System.out.println(maChaine1 + " " + maVariableInt + maChaine2);
+		System.out.println(maChaine1 + " " + maVariableInt + maChaine2 );
 		
 		
 	}
