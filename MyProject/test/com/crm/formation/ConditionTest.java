@@ -25,27 +25,26 @@ public class ConditionTest {
 //		}
 //		
 //		System.out.println("Fin programme");
-		
-		
+
 		int nb = 5;
 		String chaine = "OK";
-		
-					// syntaxe else if
+
+		// syntaxe else if
 		if (nb > 10 && chaine.equals("OK")) {
 			System.out.println("Condition remplie");
-		}else if(nb > 10 || chaine.equals("OK")) {
+		} else if (nb > 10 || chaine.equals("OK")) {
 			System.out.println("Une des 2 condition remplie");
-		}else {
+		} else {
 			System.out.println("Aucune Condistion remplie");
 		}
-					
-					//if imbriquée
+
+		// if imbriquée
 		if (nb > 10 && chaine.equals("OK")) {
 			System.out.println("Condition remplie");
-		}else {
+		} else {
 			if ((nb > 10 || chaine.equals("OK")))
-				System.out.println("Une des 2 condition remplie");	
+				System.out.println("Une des 2 condition remplie");
 		}
-	
+
 	}
 }

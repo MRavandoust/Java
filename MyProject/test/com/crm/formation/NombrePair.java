@@ -2,7 +2,9 @@
  * 
  */
 package com.crm.formation;
+
 import java.util.*;
+
 /**
  * @author CRM
  *
@@ -18,7 +20,7 @@ public class NombrePair {
 		int a = sc.nextInt();
 		if (a % 2 == 0) {
 			System.out.println("Ce nombre est pair");
-		}else {
+		} else {
 			System.out.println("Ce nombre est impair");
 		}
 		sc.close();

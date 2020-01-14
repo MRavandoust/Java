@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class LoginForm {
 	public static final String LOG = "CRM";
 	public static final String PASS = "CDI1234";
+
 	/**
 	 * @param args
 	 */
@@ -21,16 +22,16 @@ public class LoginForm {
 		String login = sc.nextLine();
 		System.out.println("Entrez votre mot de passe : ");
 		String motDePasse = sc.nextLine();
-		if(login.equalsIgnoreCase(LOG)) {
-			if(motDePasse.equals(PASS)) {
+		if (login.equalsIgnoreCase(LOG)) {
+			if (motDePasse.equals(PASS)) {
 				System.out.println("Login success");
-			}else {
+			} else {
 				System.out.println("Login failed!\nLe mot de passe est incorrect!.");
 			}
 		} else {
 			System.out.println("Login failed!\nVotre login est incorrect");
 		}
-		sc.close();	
+		sc.close();
 	}
-			
+
 }
