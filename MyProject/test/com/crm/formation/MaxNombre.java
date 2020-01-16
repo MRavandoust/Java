@@ -22,15 +22,15 @@ public class MaxNombre {
 		double b = sc.nextDouble();
 		System.out.println("Entrez 3e nombre: ");
 		double c = sc.nextDouble();
-				// Première solution
+		// Première solution
 //		double max1 = Math.max(a, b);
 //		double max2 = Math.max(max1, c);
-		
-		        // Deuxieme solution
-			double max1 = (a > b)? a : b;
-			double max2 = (max1 > c)? max1 : c;
-		
-				//Troisieme solution
+
+		// Deuxieme solution
+		double max1 = (a > b) ? a : b;
+		double max2 = (max1 > c) ? max1 : c;
+
+		// Troisieme solution
 //		double max1 , max2;
 //		if (a > b) {
 //			 max1 = a;
@@ -42,10 +42,9 @@ public class MaxNombre {
 //		}else {
 //			max2 = c;
 //		}
-			
-		
+
 		System.out.format("Le nombre maximum est : %.2f", max2);
-			
+
 		sc.close();
 	}
 
