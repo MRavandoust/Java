@@ -9,7 +9,7 @@ public class DessinerUnLosange {
 		System.out.println("Entrez une longueur du Losange :");
 		int k = sc.nextInt();
 		int i;
-		int j;
+	
 
 		for (i = 0; i < k; i++) {
 			for (int l = 0; l < k - i; l++)
@@ -30,7 +30,7 @@ public class DessinerUnLosange {
 			System.out.print("/");
 			System.out.print("\n");
 		}
-
+		sc.close();
 	}
 
 }

@@ -44,13 +44,13 @@ public class Test {
 		System.out.println(maVariableShort);
 		
 		
-		float maVariableFloat = 2.5F; // il faut mettre F après 2.5
-		double maVariableDouble = 3.456885; 
-		char maVariableChar = 'c';
+//		float maVariableFloat = 2.5F; // il faut mettre F après 2.5
+//		double maVariableDouble = 3.456885; 
+//		char maVariableChar = 'c';
 		char maVariableChar1 = '\u0059';
 		System.out.println(maVariableChar1);
 		
-		boolean maVariableBoolean = true;
+//		boolean maVariableBoolean = true;
 		
 		String maChaine1 = "Mon texte";
 		String maChaine2 = " est super";

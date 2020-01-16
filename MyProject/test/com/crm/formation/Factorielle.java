@@ -20,6 +20,7 @@ public class Factorielle {
 		long nb = sc.nextLong();
 		long resultat = factorielle(nb);
 		System.out.println("Le resultat de factorielle est : " + resultat);
+		sc.close();
 	}
 	
 	

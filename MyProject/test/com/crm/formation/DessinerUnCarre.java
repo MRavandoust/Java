@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author CRM
  *
  */
-public class DessinerUnCarré {
+public class DessinerUnCarre {
 
 	/**
 	 * @param args
@@ -25,7 +25,7 @@ public class DessinerUnCarré {
 				System.out.print("*");
 			System.out.print("\n");
 		}
-
+		sc.close();
 	}
 
 }

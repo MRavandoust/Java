@@ -25,7 +25,7 @@ public class DessinerUnTriangleRectangle {
 				System.out.print("*");
 			System.out.print("\n");
 		}
-
+		sc.close();
 	}
 
 }

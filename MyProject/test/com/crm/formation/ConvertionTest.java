@@ -25,8 +25,8 @@ public class ConvertionTest {
 		int c = s; 
 		System.out.println(c);
 		
-		byte b;
-		b = (byte) c; // (b = c;) C'est impossible donc ile faut faire "type casting".
+//		byte b;
+//		b = (byte) c; // (b = c;) C'est impossible donc ile faut faire "type casting".
 		
 		
 		long l1 = 123456789;

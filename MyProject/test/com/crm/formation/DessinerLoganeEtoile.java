@@ -19,7 +19,7 @@ public class DessinerLoganeEtoile {
 		System.out.println("Entrez une longueur du Losange :");
 		int k = sc.nextInt();
 		int i;
-		int j;
+		
 
 		for (i = 0; i < k; i++) {
 			for (int l = 0; l < k - i; l++)
@@ -44,8 +44,7 @@ public class DessinerLoganeEtoile {
 				System.out.print("*");
 			System.out.print("\n");
 		}
-		
-		
+
 		for (i = 0; i < k; i++) {
 			for (int l = 0; l < k - i; l++)
 				System.out.print(" ");
@@ -69,7 +68,7 @@ public class DessinerLoganeEtoile {
 				System.out.print(" ");
 			System.out.print("\n");
 		}
-
+		sc.close();
 	}
 
 }

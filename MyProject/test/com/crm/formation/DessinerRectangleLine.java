@@ -19,7 +19,7 @@ public class DessinerRectangleLine {
 		System.out.println("Entrez une longueur du triangle :");
 		int k = sc.nextInt();
 		int i;
-		int j;
+
 		for (i = 0; i <= k; i++)
 			System.out.print("__");
 		System.out.print("\n");
@@ -33,8 +33,7 @@ public class DessinerRectangleLine {
 
 		for (i = 0; i <= k; i++)
 			System.out.print("__");
-
+		sc.close();
 	}
 
 }
-
