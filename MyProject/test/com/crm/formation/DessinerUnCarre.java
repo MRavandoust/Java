@@ -21,8 +21,10 @@ public class DessinerUnCarre {
 		int i;
 		int j;
 		for (i = 0; i < k; i++) {
-			for (j = 0; j < k; j++)
+			for (j = 0; j < k; j++) {
+				System.out.print(" ");
 				System.out.print("*");
+			}
 			System.out.print("\n");
 		}
 		sc.close();

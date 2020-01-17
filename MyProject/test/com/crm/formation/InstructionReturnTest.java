@@ -23,7 +23,7 @@ public class InstructionReturnTest {
 		for (int i = 0; i < nb; i++) {
 			if(i==5) {
 				return;  // il sort du programme
-				//continue;  // il fait jusqu'à fin sauf le cas précisé
+				//continue;  // il execute jusqu'à la fin sauf le cas excepté
 				//break;  // il sort que la boucle for
 			}
 			

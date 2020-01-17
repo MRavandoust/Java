@@ -21,8 +21,17 @@ public class DessinerUnTriangleRectangle {
 		int i;
 		int j;
 		for (i = 1; i <= k; i++) {
-			for (j = 0; j < i; j++)
+			for (j = 0; j < i; j++) {
+				System.out.print(" ");
 				System.out.print("*");
+//				for(i = 0; i < 4*k - 4*i; i++) {
+//					System.out.print(" ");
+//				}
+//				for (i = 1; i <= k; i++) {
+//					System.out.print(" ");
+//					System.out.print("*");
+//				}	
+			}
 			System.out.print("\n");
 		}
 		sc.close();
