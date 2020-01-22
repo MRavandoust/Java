@@ -16,8 +16,10 @@ public class Tableau {
 	 */
 	public static void main(String[] args) {
 		String[] str = { "Bonjour ", "tout le monde! ", "la programation ", "est facile." };
-		for (int i = 0; i < str.length; i++)
-			System.out.print(str[i]);
+//		for (int i = 0; i < str.length; i++)
+//			System.out.print(str[i]);
+		for (String s  : str)
+			System.out.print(s);
 
 		System.out.println();
 		System.out.println();
@@ -33,16 +35,12 @@ public class Tableau {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Entrez le jour :");
 		String jour = sc.nextLine();
-		// System.out.println(jour + " en anglais est: " + convertirJours(jour));
-
 		System.out.println(convertirJours(jour));
-		
+
 		sc.close();
 	}
 
-	
-	
-	//La méthod de chercher l'indice
+	// La méthod de chercher l'indice
 	public static int getIndice(String jour) {
 		String[] jours = { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samdi", "dimanche" };
 		int n = -1;
@@ -54,10 +52,10 @@ public class Tableau {
 		return n;
 	}
 
-	//la méthod de convertir un jour en anglais
+	// la méthod de convertir un jour en anglais
 	public static String convertirJours(String jour) {
 		String[] days = { "monday", "thuesday", "wednesday", "thursday", "friday", "saturday", "sunday" };
-		int indiceRecherche = Tableau.getIndice(jour);
+		int indiceRecherche = getIndice(jour);
 		String message = "";
 		if (indiceRecherche != -1) {
 			message = jour + " en anglais est: " + days[getIndice(jour)];

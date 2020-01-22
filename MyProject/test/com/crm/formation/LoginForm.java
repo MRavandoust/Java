@@ -32,6 +32,7 @@ public class LoginForm {
 			System.out.println("Login failed!\nVotre login est incorrect");
 		}
 		sc.close();
+		
 	}
 
 }

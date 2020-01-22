@@ -20,7 +20,7 @@ public class CalculePerimetr {
 		double a = 20;
 		double b = 33;
 		double c = CalculePerimetr.CalculezPerimetr(a, b);
-		System.out.println("Le périmètre du rectangle est : " + c);
+		System.out.format("Le périmètre du rectangle est : %.2f", c);
 
 	}
 
