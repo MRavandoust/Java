@@ -6,16 +6,14 @@ package com.crm.formation;
 import java.util.Scanner;
 
 /**
-* Masoud RAVANDOUST
-*/
-
-/**
+ * 
  * @author CRM
  *
  */
 public class LesChiffreEntreDeuxLimit {
 
 	/**
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -25,7 +23,7 @@ public class LesChiffreEntreDeuxLimit {
 		System.out.println("Entre deuxième nombre: ");
 		int n2 = sc.nextInt();
 		System.out.println("Le valeurs intermédiaires :");
-		 
+
 		//premier type repetative
 //		for(int i=0; i < ((n2-n1)/2)+1; i++)
 //			System.out.println(n1 + 2*i);
@@ -43,7 +41,8 @@ public class LesChiffreEntreDeuxLimit {
 			System.out.println(n1 + 2*i);
 			i++;
 		} while (i < ((n2-n1)/2)+1) ;
-			
+		
+		sc.close();
 	}
 
 }
