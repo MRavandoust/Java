@@ -69,15 +69,18 @@ public class TableauTest {
 //		for (int i = 0; i < tab1.length; i++)
 //			System.out.println(tab1[i]);
 		
+	System.out.println("Tableau en deux dimentions");
 		int[][] tabEntiers = {{9, 7, 3, 4, 5, 6},
                 {8, 5, 2, 4 , 9, 7},
                 {4, 2, 3, 7, 8, 9}};
 		
 		
-		for (int i = 0; i <3; i++) { 
-			for (int j = 0; j <6; j++)
+		for (int i = 0; i <3; i++) {
+			System.out.println();
+			for (int j = 0; j <6; j++) {
 				System.out.print(tabEntiers[i][j] + " ");
-		
+				
+			}
 		}
 	}
 
