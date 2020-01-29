@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author CRM
  *
  */
-public class Tableau {
+public class TableauConvertJours {
 
 	/**
 	 * @param args
