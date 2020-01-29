@@ -30,35 +30,48 @@ public class TableauConvertJours2 {
 	}
 
 	// La méthod de chercher l'indice
-	public static String getIndice(String jour) {
-		String[][] jours = { { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samdi", "dimanche" },
-				{ "monday", "thuesday", "wednesday", "thursday", "friday", "saturday", "sunday" } };
-		int n = -1;
-		int m = -1;
-		for (int i = 0; i < jours.length; i++) {
-			for (int j = 0; j < jours[i].length; j++)
-				if (jour.equalsIgnoreCase(jours[i][j])) {
-					n = i;
-					m = j;
-				}
-		}
-		return n + "," + m;
-	}
+//	public static int[] getIndice(String jour) {
+//		String[][] jours = { { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samdi", "dimanche" },
+//				{ "monday", "thuesday", "wednesday", "thursday", "friday", "saturday", "sunday" } };
+//		int n = -1;
+//		int m = -1;
+//		for (int i = 0; i < jours.length; i++) {
+//			for (int j = 0; j < jours[i].length; j++)
+//				if (jour.equalsIgnoreCase(jours[i][j])) {
+//					n = i;
+//					m = j;
+//				}
+//		}
+//		int[] indice = {n , m};
+//		return indice;
+//	}
 
 	// la méthod de convertir un jour en anglais
 	public static String convertirJours2(String jour) {
 		String[][] days = { { "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samdi", "dimanche" },
-				{ "monday", "thuesday", "wednesday", "thursday", "friday", "saturday", "sunday" }};
-		String[] indice = getIndice(jour).split(",");
-		int[] ind = {Integer.parseInt(indice[0]), Integer.parseInt(indice[1])};
+				{ "monday", "thuesday", "wednesday", "thursday", "friday", "saturday", "sunday" } };
+//		String[] indice = getIndice(jour).split(",");
+//		int[] ind = {Integer.parseInt(indice[0]), Integer.parseInt(indice[1])};
+
+		int n = -1;
+		int m = -1;
+		for (int i = 0; i < days.length; i++) {
+			for (int j = 0; j < days[i].length; j++)
+				if (jour.equalsIgnoreCase(days[i][j])) {
+					n = i;
+					m = j;
+				}
+		}
+		int[] indice = { n, m };
+
 		String message = "";
-		int[] er = {-1,-1};
-		if (Arrays.equals(ind, er )) {
+		int[] erreur = { -1, -1 };
+		if (Arrays.equals(indice, erreur)) {
 			message = " Le saisit n'est pas correct ";
-		}else if(ind[0] == 0) {
-			message = jour + " en anglais est: " + days[1][ind[1]];
+		} else if (indice[0] == 0) {
+			message = jour + " en anglais est: " + days[1][indice[1]];
 		} else {
-			message = jour + " en francais est: " + days[0][ind[1]];
+			message = jour + " en francais est: " + days[0][indice[1]];
 		}
 		return message;
 	}
