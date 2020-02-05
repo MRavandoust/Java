@@ -27,6 +27,20 @@ public class Personne {
 //	public void setDateNaissance(Date date) {
 //		dateNaissance = date;
 //	}
+	
+	public Personne() {
+		prenom = "";
+		nom = "";
+		surnom = "";
+		System.out.println("Construction d'un objet Personne(sans param)");
+	}
+	
+	public Personne(String prenom, String nom) {
+		this.prenom = prenom;
+		this.nom = nom;
+		surnom = "";
+		System.out.println("Construction d'un objet Personne(avec param)");
+	}
 
 	public Date getDateNaissance() {
 		return dateNaissance;
@@ -48,22 +62,32 @@ public class Personne {
 		this.prenom = prenom;
 	}
 
+	
+	public String getSurnom() {
+		return surnom;
+	}
+
+	public void setSurnom(String surnom) {
+		this.surnom = surnom;
+	}
+
+	
 	public void setDateNaissance(String str) {
 		
-		LocalDateTime myDateObj = LocalDateTime.now();
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		//dateNaissance = dtf.
-		System.out.println(myDateObj.format(dtf));
+//		LocalDateTime myDateObj = LocalDateTime.now();
+//		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+//		//dateNaissance = dtf.
+//		System.out.println(myDateObj.format(dtf));
 		
 		
 		
-//		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-//		try {
-//			dateNaissance = sdf.parse(str);
-//		} catch (ParseException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		try {
+			dateNaissance = sdf.parse(str);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void afficherDetails() {
