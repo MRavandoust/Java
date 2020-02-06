@@ -94,5 +94,21 @@ public class Personne {
 		System.out.println("vous etes : " + getPrenom() + " " + getNom() + "(" + surnom + ")");
 
 	}
+	
+	public boolean isEquals(Personne pers) {
+		if(this.prenom.equals(pers.prenom) && this.nom.equals(pers.nom))
+			return true;
+		else
+			return false;
+	}
+	
+	public int incremente(int nb) {
+		return nb++;
+	}
+	
+	public void modifierPersonne(Personne pers) {
+		pers.nom = pers.nom.toUpperCase();
+		pers.prenom = pers.prenom.toUpperCase();
+	}
 
 }
