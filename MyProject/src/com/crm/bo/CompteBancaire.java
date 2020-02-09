@@ -31,7 +31,7 @@ public class CompteBancaire {
 
 	public void retraitSolde(int montant) {
 		if (montant > 150)
-			System.out.println("Vous pouvez retirer maximum 150â‚¬");
+			System.out.println("Vous pouvez retirer maximum 150€");
 		else
 			solde -= montant;
 		System.out.println("Votre solde actuel est " + solde);
