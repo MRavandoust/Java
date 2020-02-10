@@ -42,6 +42,7 @@ public class VectorApp {
 		Personne lebronModif = (Personne) groupe.get(1);
 		System.out.println("Le surnom de Lebron James est " + lebronModif.surnom);
 		
+		
 		((Personne)groupe.get(0)).afficherDetails();
 		
 		
