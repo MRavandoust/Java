@@ -37,16 +37,12 @@ public class CompteBancaire {
 	}
 
 	public void retraitSolde(int montant) {
-<<<<<<< HEAD
-		if (montant > 150)
-			System.out.println("Vous pouvez retirer maximum 150�");
+
+		if (getSolde() - montant < - 150)
+			System.out.println("Vous pouvez retirer maximum " + (getSolde() + 150) + "€" );
 		else
-=======
-		if (getSolde() - montant > -150)
->>>>>>> branch 'master' of https://github.com/Masoud2020/Java.git
 			solde -= montant;
-		else
-		System.out.println("Votre pouvez retirer maximum :" + (solde + 150) + "€");
+		System.out.println("Il vous rest " + getSolde() + "€ sur votre compte.");
 	}
 
 	public void depotSolde(int montant) {
