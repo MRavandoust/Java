@@ -92,8 +92,17 @@ public class Personne {
 
 	public void afficherDetails() {
 		System.out.println("vous etes : " + getPrenom() + " " + getNom() + "(" + surnom + ")");
-
 	}
+
+	public void afficherDetails(String langue) {
+		if(langue.equalsIgnoreCase("fr"))
+		System.out.println("vous etes : " + getPrenom() + " " + getNom() + "(" + surnom + ")");
+		else
+			System.out.println("You are : " + getPrenom() + " " + getNom() + "(" + surnom + ")");
+	}
+	
+	
+	
 	
 	public boolean isEquals(Personne pers) {
 		if(this.prenom.equals(pers.prenom) && this.nom.equals(pers.nom))

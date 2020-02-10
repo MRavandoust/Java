@@ -17,19 +17,26 @@ public class RectangleApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Rectangle rec1 = new Rectangle();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Entrez hauter :");
-		float hauteur1 = sc.nextFloat();
-		System.out.println("Entrez largeur :");
-		float largeur1 = sc.nextFloat();
-		rec1.setHauteur(hauteur1);
-		rec1.setLargeur(largeur1);
-		rec1.afficheDetails();
-		sc.close();
+//		Rectangle rec1 = new Rectangle();
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Entrez hauter :");
+//		float hauteur1 = sc.nextFloat();
+//		System.out.println("Entrez largeur :");
+//		float largeur1 = sc.nextFloat();
+//		rec1.setHauteur(hauteur1);
+//		rec1.setLargeur(largeur1);
+//		rec1.afficheDetails();
+//		sc.close();
+//
+//		Rectangle rec2 = new Rectangle(12, 18);
+//		rec2.afficheDetails();
+		
+		Rectangle rec3 = new Rectangle(24, 16);
+		System.out.println("La surface du rectangle est: " + rec3.calculeSurface("cm"));
+		
 
-		Rectangle rec2 = new Rectangle(12, 18);
-		rec2.afficheDetails();
 	}
+	
+	
 
 }

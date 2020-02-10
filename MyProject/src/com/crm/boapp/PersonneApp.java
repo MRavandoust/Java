@@ -65,6 +65,8 @@ public class PersonneApp {
 		//
 		pers3.modifierPersonne(pers4);
 		pers4.afficherDetails();
+		
+		pers4.afficherDetails("en");
 
 	}
 

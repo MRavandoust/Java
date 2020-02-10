@@ -49,7 +49,7 @@ public class CompteBancaire {
 	}
 	
 	public void afficherSolde() {
-		System.out.println("Votre solde actuel est " + getSolde());
+		System.out.println("Votre solde actuel est " + getSolde() + "€");
 	}
 
 }
