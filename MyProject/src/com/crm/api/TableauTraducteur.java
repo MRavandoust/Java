@@ -18,7 +18,7 @@ public class TableauTraducteur {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Entrez la phrase à traduire");
 		String phrase = sc.nextLine();
-		System.out.println("La traduction :");
+		System.out.println("==> :");
 		System.out.println(traducteur(phrase));
 		sc.close();
 
