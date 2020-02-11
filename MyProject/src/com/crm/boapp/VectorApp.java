@@ -28,12 +28,12 @@ public class VectorApp {
 		Personne unBasketteur1 = (Personne) groupe.get(0);
 		System.out.println(unBasketteur1.getNom());
 		
-		System.out.println("Mon equipe a " + groupe.size() + "joueurs");
+		System.out.println("Mon equipe a " + groupe.size() + " joueurs");
 		
 		Personne kob = new Personne("Kobe" , "Bryant");
 		groupe.addElement(kob);
 		
-		System.out.println("Mon equipe a " + groupe.size() + "joueurs");
+		System.out.println("Mon equipe a " + groupe.size() + " joueurs");
 		
 		System.out.println("Le joueur Lebron James est à la " + (groupe.indexOf(lebron) + 1) + "position");
 		
