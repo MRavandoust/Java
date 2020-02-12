@@ -3,66 +3,36 @@
  */
 package com.crm.bo;
 
+import com.crm.bo.FicheTechnique;
+
 /**
-* @author Masoud RAVANDOUST
-*/
+ * @author Masoud RAVANDOUST
+ */
 
 public class Voiture {
-	FicheTechnique fiche;
+	public FicheTechnique fiche;
 	private int vitesse;
 	private String typeRoute;
 	private boolean demaree;
-	
+	private boolean etatActuel;
+
 	public Voiture() {
-		
+		fiche = new FicheTechnique();
 		vitesse = 0;
 		demaree = false;
 	}
-	
-	public Voiture(String marque, String couleur, int nbPortes, boolean boteAuto ) {
-		
+
+	public Voiture(String marque, String couleur, boolean boiteAuto, int nbPortes, int prix) {
+		fiche = new FicheTechnique(marque, couleur, boiteAuto, nbPortes, prix);
 	}
 
-	public String getMarque() {
-		return fiche.marque;
+	public FicheTechnique getFiche() {
+		return fiche;
 	}
 
-	public void setMarque(String marque) {
-		fiche.marque = marque;
+	public void setFiche(FicheTechnique fiche) {
+		this.fiche = fiche;
 	}
-
-	public String getCouleur() {
-		return fiche.couleur;
-	}
-
-	public void setCouleur(String couleur) {
-		fiche.couleur = couleur;
-	}
-
-	public int getNbPortes() {
-		return fiche.nbPortes;
-	}
-
-	public void setNbPortes(int nbPortes) {
-		fiche.nbPortes = nbPortes;
-	}
-
-	public boolean isBoiteAuto() {
-		return fiche.boiteAuto;
-	}
-
-	public void setBoiteAuto(boolean boiteAuto) {
-		fiche.boiteAuto = boiteAuto;
-	}
-
-	public int getPrix() {
-		return fiche.prix;
-	}
-
-	public void setPrix(int prix) {
-		fiche.prix = prix;
-	}
-	
 
 	public int getVitesse() {
 		return vitesse;
@@ -87,17 +57,72 @@ public class Voiture {
 	public void setDemaree(boolean demaree) {
 		this.demaree = demaree;
 	}
-	
-	public void afficheProprietes() {
-		System.out.println("La marque: " + getMarque());
-		System.out.println("Le couleur: " + getCouleur());
-		System.out.println("Le nonmbre de portes: " + getNbPortes());
-		if (fiche.boiteAuto = true)
-			System.out.println("La boite de vitesse: Auto");
+
+	public boolean isEtatActuel() {
+		return etatActuel;
+	}
+
+	public void setEtatActuel(boolean etatActuel) {
+		this.etatActuel = etatActuel;
+	}
+
+	// Méthode pour demarrer la voiture
+
+	public boolean demarrer() {
+		if (etatActuel == false)
+			etatActuel = true;
+		return etatActuel;
+	}
+
+	// Méthode pour arreter la voiture
+
+	public boolean arrete() {
+		if (etatActuel == true)
+			etatActuel = false;
+		return etatActuel;
+	}
+
+	// Méthode pour afficher la vitesse de la voiture
+
+	public void afficheVitesse() {
+		System.out.println("La vitesse est: " + vitesse);
+	}
+
+	// Méthode pour accelerer la voiture
+
+	public void accelere(String typeRoute, int vitesse) {
+		if (etatActuel) {
+			if (typeRoute.equalsIgnoreCase("ville")) {
+				if (vitesse < 50)
+					this.vitesse = vitesse;
+				else
+					System.out.println("La vitess maximum autorisé est 50 km/h");
+			}
+
+			else if (typeRoute.equalsIgnoreCase("national")) {
+				if (vitesse < 80)
+					this.vitesse = vitesse;
+				else
+					System.out.println("La vitess maximum autorisé est 80 km/h");
+			} else if (typeRoute.equalsIgnoreCase("Autoroute")) {
+				if (vitesse < 130 && vitesse > 60)
+					this.vitesse = vitesse;
+				else if (vitesse < 60)
+					System.out.println("La vitess minimum autorisé est 60 km/h");
+				else
+					System.out.println("La vitess maximum autorisé est 130 km/h");
+			}
+		} else
+			System.out.println("D'abord il faut demarrer la voiture");
+	}
+
+	// Méthode pour ralentir la voiture
+
+	public void ralentir(int vitesse) {
+		if (vitesse < this.vitesse)
+			this.vitesse = vitesse;
 		else
-			System.out.println("La boite de vitesse: Manuel");
-		System.out.println("Le prix: " + getPrix() + "€");
-		
+			vitesse = this.vitesse;
 	}
 
 }
