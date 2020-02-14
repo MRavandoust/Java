@@ -17,7 +17,7 @@ public class Voiture {
 	private boolean etatActuel;
 
 	public Voiture() {
-		fiche = new FicheTechnique();
+		fiche  = new FicheTechnique();
 		vitesse = 0;
 		demaree = false;
 	}
