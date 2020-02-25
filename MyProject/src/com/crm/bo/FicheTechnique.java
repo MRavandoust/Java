@@ -76,7 +76,7 @@ public class FicheTechnique {
 			System.out.println("La boite de vitesse: Auto");
 		else
 			System.out.println("La boite de vitesse: Manuel");
-		System.out.println("Le prix: " + getPrix() + "€");
+		System.out.println("Le prix: " + getPrix() + "â‚¬");
 
 	}
 

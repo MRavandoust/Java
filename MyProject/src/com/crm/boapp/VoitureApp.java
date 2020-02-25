@@ -36,7 +36,7 @@ public class VoitureApp {
 		
 		voi1.demarrer();
 		if (voi1.isEtatActuel())
-			System.out.println("La voiture demare");
+			System.out.println("La voiture est demaree");
 		
 		voi1.arrete();
 		if (!voi1.isEtatActuel())
