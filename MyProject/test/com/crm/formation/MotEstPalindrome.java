@@ -23,7 +23,7 @@ public class MotEstPalindrome {
 			char c = mot.charAt(mot.length() - i);
 			str += c;
 		}
-		if (str.equalsIgnoreCase(mot)) {
+		if (str.equalsIgnoreCase(mot)){
 			System.out.println("\"" + mot + "\"" + " est un palindrome.");
 		} else
 			System.out.println("\"" + mot + "\"" + " n'est pas un palindrome.");
